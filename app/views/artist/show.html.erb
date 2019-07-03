@@ -1,0 +1,9 @@
+<h2> This is <%= @artist[:name]%>'s page </h2>
+
+<h1> <%= @artist[:name] %></h1>
+<h3> Artist id is <%= @artist[:id] %> </h3>
+<h3> Artist name is <%= @artist[:name] %> </h3>
+<h4> Artist was born in the year <%= @artist[:year_of_birth] %> </h4>
+<h3> Active: <%= @artist[:active] %> </h3>
+
+<h3> <%= link_to "Add album to #{@artist.name}", "/albums/new?artist_id=#{@artist.id}" %> </h3>
